@@ -1,0 +1,94 @@
+<!doctype html>
+<HTML>
+<head>
+<title>HTML PROJECT HOME PAGE 
+</title>
+
+<style>
+
+BODY {BACKGROUND-COLOR:rgb(10,10,150);}
+
+a.one:hover {background-color: BLUE;  color: WHITE; }
+
+a.two:hover {background-color: blue;  color: white; }
+
+#MSG{ color:black; position:absolute; top:69px; LEFT:10px; FONT-SIZE:2EM; Z-INDEX:3;}
+
+.BGIMG{ opacity:.8; position:absolute; top:100px; left:0px; width:100%; hEIGHT:70%; Z-INDEX:1; display:none; }
+
+#NAME{ position:absolute; top:-20px; left:20px; BORDER:4PX RIDGE RED; BACKGROUND-COLOR:white; color:black; FONT-FAMILY:SANS-SERIF; Z-INDEX:3; FONT-SIZE:2.5EM;}
+
+#NAME:hover{BORDER:4PX RIDGE yellow; BACKGROUND-COLOR:purple; cOLOR:white;}
+
+#SELECT{text-decoration: none; color:black; FONT-FAMILY:sans-serif; position:absolute; top:2px; left:860px; BACKGROUND-color:white; hEIGHT:20PX; WIDTH:225PX; FONT-SIZE:1.7em;}
+
+.one{text-align:center; text-decoration: none; color:blUE; position:absolute; top:-15px; left:8px; FONT-FAMILY:sans-serif;  BACKGROUND-color:white; hEIGHT:41.8PX; WIDTH:270PX; FONT-SIZE:1.2em;}
+
+.two{text-align:center; text-decoration: none;  color:blUE; position:absolute; top:-10px; left:0px; FONT-FAMILY:sans-serif;  BACKGROUND-color:white; hEIGHT:40PX; WIDTH:225PX; FONT-SIZE:1.1em;}
+
+#EMPLOYER{FONT-FAMILY:sans-serif; position:absolute; BORDER:1PX SOLID BLACK; top:5px; left:1100px; BACKGROUND-color:white; COLOR:BLACK; hEIGHT:20PX; WIDTH:270PX; FONT-SIZE:2.1em;}
+
+#employer1{ position:absolute; top: 9px; left:1093px; FONT-FAMILY:sans-serif; FONT-SIZE:1.5EM;}
+
+
+
+#FOOTER {Z-INDEX:2; FONT-SIZE:2.5EM; position:absolute; color:WHITE; TOP:578px; left:20px; hEIGHT:20%; WIDTH:39%; FONT-FAMILY:FANTASY;}
+
+#POSTED { Z-INDEX:3; position:absolute; TOP:609px; RIGHT:450px;  FONT-SIZE:2EM; color:WHITE; FONT-STYLE:ITALIC;}
+ 
+#EMPLOYED { Z-INDEX:3; position:absolute; TOP:609px; RIGHT:20px;  FONT-SIZE:2EM; color:WHITE; FONT-STYLE:ITALIC;}
+
+</style>
+
+
+
+</head>
+<body>
+<DIV ID="HEADER">
+
+<P ID="NAME"> JOB PORTAL </P>
+
+<P ID="EMPLOYER" ><p ID="employer1" ><a CLASS="one" href="WEBPAGE3EMPLOYERS.html"><B>  FIND CANDIDATES</B></a></p> </P>
+
+
+</DIV>
+<IMG SRC="BGIMAGEPAGE1.JPG"  CLASS="BGIMG">
+<IMG SRC="BGIMAGE2PAGE1.JPG"  CLASS="BGIMG">
+<IMG SRC="BGIMAGE3PAGE1.JPG"  CLASS="BGIMG">
+
+
+<p id="SELECT"><a CLASS="two" href="WEBPAGE2CANDIDATES.html"><B>  BROWSE JOBS </b></a></p>
+
+<P ID="MSG"><B><I> FIND YOUR <BR> DREAM JOB!</I></B></P>
+
+<P ID="FOOTER"> SELECT FROM OVER A WIDE RANGE OF JOBS AND CANDIDATES </P>
+
+<P ID="POSTED"><B><FONT COLOR="RED"> 900 + </FONT> </B> <BR> <FONT COLOR="white"> JOBS POSTED </FONT></P>
+
+<P ID="EMPLOYED"><B> <FONT COLOR="RED"> 760 + </FONT></B> <BR> <FONT COLOR="white"> CANDIDATES EMPLOYED </FONT></P>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+ 
+  var slides = document.getElementsByClassName("BGIMG");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+ 
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  
+  slides[slideIndex-1].style.display = "block";  
+ 
+  setTimeout(showSlides, 2500);
+}
+</script>
+</BODY>
+</HTML>
+
+
+
+

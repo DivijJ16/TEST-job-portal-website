@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>HTML PROJECT RESUME</title>
+<STYLE>
+
+H1{COLOR:RGB(30,45,50); TEXT-DECORATION: UNDERLINE; FONT-SIZE:50; position:absolute; TOP:-10px; left:160px; Z-INDEX:2; }
+
+DIV { position:ABSOLUTE; BACKGROUND-color:rgb(160,170,180); TOP:100px; left:30px; hEIGHT:80%; WIDTH:95%;}
+
+#TABLE1 { OVERFLOW-Y:SCROLL; Z-INDEX:2; position:absolute; color:BLACK; TOP:50px; left:100px; hEIGHT:90%; WIDTH:40%; FONT-FAMILY:MONOSPACE; FONT-SIZE:1.5EM; }
+
+#TABLE2 { OVERFLOW-Y:SCROLL; Z-INDEX:2; position:absolute; color:BLACK; TOP:30px; RIGHt:70px; hEIGHT:80%; WIDTH:40%; FONT-FAMILY:SANS; FONT-SIZE:2EM; }
+.LINK { TEXT-DECORATION:NONE; BACKGROUND-color:WHITE; BORDER:1PX SOLID BLACK; Z-INDEX:4; position:absolute; color:BLACK; TOP:534px; LEFT:5px; hEIGHT:30PX; TEXT-ALIGN:CENTER; WIDTH:155PX; FONT-FAMILY:SANS; FONT-SIZE:1EM;}
+
+.link:hover{ background-color:crimson; color:white;}
+
+</STYLE>
+</head>
+<body background = "BGIMGPAGE4.JPG">
+<h1><I> FILL IN YOUR DETAILS & QUALIFICATIONS</I></h1>
+<DIV>
+<FORM NAME="FORM" action="#" onsubmit="alert()">
+<table ID="TABLE1">
+<tr><td>NAME :</td><td><input type="text" PLACEHOLDER="NAME" name ="NAME" required></Td></tr>
+<tr><td>ADDRESS :<td><INPUT TYPE="TEXT" PLACEHOLDER="ADDRESS" NAME="ADDRESS" required></tr>
+<tr><td>GENDER :<td><INPUT TYPE="RADIO" NAME="GENDER" selected>MALE
+<INPUT TYPE="RADIO" NAME="GENDER">FEMALE</tr>
+<tr><td>EMAIL :</td><td><input type="MAIL" PLACEHOLDER="EMAIL" name ="MAIL" required></Td></tr>
+<tr><td>PHONE NO. :</td><TD><SELECT>
+<OPTION SELECTED>+91</OPTION>
+<OPTION>+911</OPTION>
+<OPTION>+912</OPTION>
+<OPTION>+913</OPTION></SELECT></TD>
+<td><input type="PHONE" PLACEHOLDER="PHONE NO." name ="PHONE" required></Td></tr>
+<tr><td>LANGUAGES :</td><td><input type="text" PLACEHOLDER="LANGUAGES" name ="LANGS" required></Td></tr>
+<TR> <TD> <B>SKILLS : </B> <TD> <tEXTAREA ROWS="12" COLS="30" name ="SKILLS" required>
+</TEXTAREA> </TR>
+
+<tr><td><input type="SUBMIT" name="SUBMIT" value="SUBMIT"><td><input type="RESET" name="RESET" value="CLEAR"></tr>
+
+<TR><td><a class="LINK" href="WEBPAGE5FINAL.html"><B>NEXT PAGE</B></A></Td></tr>
+</table>
+
+<TABLE ID="TABLE2">
+
+<TR> <TD> <B> <FONT SIZE="4"> QUALIFICATIONS : </FONT> </B> <BR>  <tEXTAREA ROWS="15" COLS="80" name ="QUALS" ID="QUALS" required>
+</TEXTAREA> </TR>
+
+<TR></TR><TR></TR><TR></TR><TR></TR><TR></TR>
+
+<TR> <TD> <B> <FONT SIZE="4"> WORK EXPERIENCE : </FONT> </B> <BR>  <tEXTAREA ROWS="15" COLS="80" name ="EXP" ID="EXP" required>
+</TEXTAREA> </TR>
+
+</TABLE>
+
+</FORM>
+
+
+
+</DIV>
+
+<SCRIPT>
+
+function alert(){
+
+var empt1 = document.forms["FORM"]["NAME"].value;
+var empt2 = document.forms["FORM"]["GENDER"].checked;
+var empt3 = document.forms["FORM"]["ADDRESS"].value;
+var empt4 = document.forms["FORM"]["MAIL"].value;
+var empt5 = document.getElementById("QUALS").value;
+
+
+if (empt1 == "" || empt2 == "" || empt3 == "" || empt4 == "" || empt5 == "" )
+{
+alert("PLEASE FILL ALL THE DETAILS !");
+
+return false;
+
+}
+else{return true;}
+
+
+}
+
+</SCRIPT>
+
+</body>
+</html>
+
+
+
+
+
+
